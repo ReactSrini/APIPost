@@ -14,9 +14,9 @@ app.post('/parsing',function(req,res)
   var question=req.body.question;
   console.log("question : " + question);
   console.log("API Object Context : " + req.body.apiObj)
-  var arr=[ {name : 'aaa',
+  var data=[ {name : 'aaa',
             place : 'Chennai'
   }];
   //res.end("yes");
-  res.json({arr});
+  res.json({data});
 });
